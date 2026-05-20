@@ -1,0 +1,190 @@
+:root {
+    --bg-color: #f4efea;
+    --text-color: #173220;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    padding: 0 5% 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-left: -15px;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 400px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* --- Menu Page Styles --- */
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.menu-title {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 2rem;
+    border: 1px solid var(--text-color);
+    border-radius: 12px;
+}
+
+.menu-item h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.menu-item p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.highlight {
+    font-weight: 600;
+    margin-top: 0.5rem !important;
+}
+
+.italic-note {
+    font-style: italic;
+    font-size: 0.95rem !important;
+    opacity: 0.8;
+}
+
+.badge {
+    align-self: flex-start;
+    border: 1px solid var(--text-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.doneness-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
+}
+
+/* --- About Page Styles --- */
+.about-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-subtitle {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-headline {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
